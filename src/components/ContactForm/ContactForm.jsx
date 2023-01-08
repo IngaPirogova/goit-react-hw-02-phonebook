@@ -88,10 +88,3 @@ export class ContactForm extends React.Component {
 
 
 
-// handleSubmit = event => {
-//     event.preventDefault();
-// console.log(this.state);
-// <ContactForm onSubmit={this.addContact} => получение данных в App
-//     this.props.onSubmit(this.state);
-//     this.reset();
-//   };

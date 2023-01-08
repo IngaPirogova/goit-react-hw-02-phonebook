@@ -9,84 +9,34 @@ export class App extends React.Component {
     filter: '',
   };
 
-
-  addContact = ({ name, number}) => {
+  addContact = ({ name, number }) => {
     const contact = {
       name,
       number,
-      id: nanoid(), 
+      id: nanoid(),
     };
-    this.setState(prevState => ({      
+    this.setState(prevState => ({
       contacts: [contact, ...prevState.contacts],
-       }))
-    }
-  
+    }));
+  };
 
-    deleteContact = contactId => {
-      this.setState(prevState => ({
-       contacts: prevState.contacts.filter(contact => contact.id !== contactId),
-      }));
-    };    
-    
-   render() {
-   
-    return (     
+  deleteContact = contactId => {
+    this.setState(prevState => ({
+      contacts: prevState.contacts.filter(contact => contact.id !== contactId),
+    }));
+  };
+
+  render() {
+    return (
       <div>
         <h1>Phonebook</h1>
         <ContactForm onSubmit={this.addContact} />
 
         <h2>Contacts</h2>
 
-           {/* <Filter  /> */}
-   <ContactList
-   contacts={this.state}
-   deleteContact={this.deleteContact}
-   
-   /> 
+        {/* <Filter  /> */}
+        <ContactList contacts={this.state} deleteContact={this.deleteContact} />
       </div>
-    
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
