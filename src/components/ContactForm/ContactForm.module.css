@@ -1,0 +1,16 @@
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+    margin-left: 100px;
+}
+
+
+
+.btnAddContact {
+    width: 100px;
+    height: 30px;
+    border: 2px solid darkblue;
+    border-radius: 5px;
+}
