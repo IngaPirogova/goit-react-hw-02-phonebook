@@ -6,7 +6,9 @@ export const ContactList = ({ contacts, deleteContact }) => {
     <ul className={css.contactList}>
       {contacts.map(({ name, number, id }) => {
         return (
-          <li key={id}>
+          <li 
+          key={id}
+          className={css.contactItem}>
             <p>
               {name}: {number}
             </p>

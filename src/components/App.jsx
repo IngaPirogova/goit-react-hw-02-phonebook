@@ -1,4 +1,5 @@
 import React from 'react';
+import css from './App.module.css';
 import { nanoid } from 'nanoid';
 import { ContactForm } from './ContactForm/ContactForm';
 import { ContactList } from './ContactList/ContactList';
@@ -56,7 +57,7 @@ export class App extends React.Component {
 
   render() {
     return (
-      <div>
+      <section className={css.section}>
         <h1>Phonebook</h1>
         <ContactForm onSubmit={this.addContact} />
         <h2>Contacts</h2>
@@ -68,7 +69,7 @@ export class App extends React.Component {
           contacts={this.searchContacts()}
           deleteContact={this.deleteContact}
         />
-      </div>
+      </section>
     );
   }
 }
