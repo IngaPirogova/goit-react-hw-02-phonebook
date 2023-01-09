@@ -1,32 +1,31 @@
 .contactList {
-    list-style: none;
-    padding: 0;   
-    
+  list-style: none;
+  padding: 0;
 }
 
 .contactItem {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .bthListItem {
-    margin-left: 20px;
-    height: 20px;
-    color: rgb(228, 84, 116);
-    border: 1px solid  rgb(86, 86, 237);;
-    border-radius: 5px;
+  margin-left: 20px;
+  height: 20px;
+  color: rgb(228, 84, 116);
+  border: 1px solid rgb(86, 86, 237);
+  border-radius: 5px;
 }
 
 .visually_hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;}
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

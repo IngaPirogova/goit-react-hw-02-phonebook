@@ -6,9 +6,7 @@ export const ContactList = ({ contacts, deleteContact }) => {
     <ul className={css.contactList}>
       {contacts.map(({ name, number, id }) => {
         return (
-          <li 
-          key={id}
-          className={css.contactItem}>
+          <li key={id} className={css.contactItem}>
             <p>
               {name}: {number}
             </p>
@@ -26,10 +24,9 @@ export const ContactList = ({ contacts, deleteContact }) => {
   );
 };
 
-ContactList.prototype = {  
-    name: PropTypes.string.isRequired,
-    number: PropTypes.string.isRequired,
-    id: PropTypes.string.isRequired,
-    deleteContact: PropTypes.func.isRequired,
-  };
-
+ContactList.prototype = {
+  name: PropTypes.string.isRequired,
+  number: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
+  deleteContact: PropTypes.func.isRequired,
+};
