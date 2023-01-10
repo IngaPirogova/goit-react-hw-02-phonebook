@@ -3,7 +3,7 @@ import css from './ContactItem.module.css';
 export const ContactItem = ({ name, number, id, deleteContact }) => {
   return (
     <>
-      <li key={id} className={css.contactItem}>
+      <li className={css.contactItem}>
         <p>
           {name}: {number}
         </p>
